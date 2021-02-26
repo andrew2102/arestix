@@ -49,6 +49,9 @@ body {
 	margin: 0 auto;
 	padding: 0 10px;
 	overflow: hidden;
+	&--sm {
+		max-width: $mw1 + px;
+	}
 	// @media (max-width: $md1+px) {
 	// 	max-width: 970px;
 	// }
@@ -75,6 +78,7 @@ body {
 //@import 'icons.scss';
 //@import 'popup.scss';
 @import 'header';
+@import 'benefits';
 @import 'footer';
 //@import 'home.scss';
 //  /ELEMENTS===================================================================================================
