@@ -20,7 +20,7 @@ $fontfamily: 'OpenSans';
 body {
 	font-family: $fontfamily;
 	color: $black;
-	font-size: 14px;
+	font-size: 16px;
 	background-color: $darkgrey;
 	&._lock {
 		overflow: hidden;
@@ -79,6 +79,10 @@ body {
 //@import 'popup.scss';
 @import 'header';
 @import 'benefits';
+@import 'devices';
+@import 'slider';
+@import 'customer';
+@import 'screenshots';
 @import 'footer';
 //@import 'home.scss';
 //  /ELEMENTS===================================================================================================

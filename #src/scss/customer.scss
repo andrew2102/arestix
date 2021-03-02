@@ -1,0 +1,55 @@
+.customer {
+   background: url(../img/customer__bg.png) center / cover no-repeat;
+	// .customer__mask
+	&__mask {
+		background-color: rgba(0,0,0,0.6);
+	}
+	// .customer__info
+	&__info {
+		max-width: 945px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+      color: $white;
+	}
+	// .customer__title
+	&__title {
+		margin-top: 80px;
+      margin-bottom: 35px;
+		font-family: 'Montserrat';
+		font-size: 36px;
+		line-height: 35px;
+		font-weight: 400;
+	}
+	// .customer__pic
+	&__pic {
+		img {
+			border-radius: 50%;
+		}
+	}
+	// .customer__text
+	&__text {
+		font-size: 25px;
+		line-height: 38px;
+		font-weight: 300;
+		font-style: italic;
+		text-align: center;
+      margin-top: 30px;
+      margin-bottom: 15px;
+	}
+	// .customer__name
+	&__name {
+		font-size: 20px;
+		line-height: 35px;
+		font-weight: 700;
+	}
+	// .customer__prof
+	&__prof {
+		opacity: 0.65;
+		font-size: 14px;
+		line-height: 35px;
+		font-weight: 600;
+      margin-bottom: 25px;
+	}
+}
