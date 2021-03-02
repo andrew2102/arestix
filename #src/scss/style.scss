@@ -21,7 +21,7 @@ body {
 	font-family: $fontfamily;
 	color: $black;
 	font-size: 16px;
-	background-color: $darkgrey;
+	background-color: $white;
 	&._lock {
 		overflow: hidden;
 		// @media (max-width: $md3+px) {
@@ -83,6 +83,7 @@ body {
 @import 'slider';
 @import 'customer';
 @import 'screenshots';
+@import 'team';
 @import 'footer';
 //@import 'home.scss';
 //  /ELEMENTS===================================================================================================

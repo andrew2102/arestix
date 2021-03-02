@@ -1,5 +1,4 @@
 .devices {
-	background-color: $white;
 	// .devices__content
 	&__content {
 		display: flex;
@@ -66,7 +65,7 @@
 	// .devices__text
 	&__text {
 		line-height: 24px;
-		color: #555555;
+		color: $graphite;
 	}
 	// .devices__item
 	&__item {

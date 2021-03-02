@@ -1,0 +1,32 @@
+.team {
+	background: url(../img/team_background.png) center / cover no-repeat;
+   // .team__mask
+   &__mask {
+      background-color: rgba($black,0.2);
+   }
+	// .team__content
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	// .team__item
+	&__item {
+	}
+	// .team__pic
+	&__pic {
+      margin-top: 70px;
+      margin-bottom: 25px;
+		img {
+			border: 2px solid $white;
+			border-radius: 50%;
+		}
+	}
+	// .team__prof
+	&__prof {
+		line-height: 35px;
+		font-weight: 300;
+		color: $white;
+      text-align: center;
+      margin-bottom: 75px;
+	}
+}

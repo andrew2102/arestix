@@ -2,15 +2,13 @@
    background: url(../img/customer__bg.png) center / cover no-repeat;
 	// .customer__mask
 	&__mask {
-		background-color: rgba(0,0,0,0.6);
+		background-color: rgba($black,0.6);
 	}
 	// .customer__info
 	&__info {
-		max-width: 945px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 0 auto;
       color: $white;
 	}
 	// .customer__title
@@ -24,6 +22,7 @@
 	}
 	// .customer__pic
 	&__pic {
+		margin-top: 35px;
 		img {
 			border-radius: 50%;
 		}
@@ -36,7 +35,7 @@
 		font-style: italic;
 		text-align: center;
       margin-top: 30px;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
 	}
 	// .customer__name
 	&__name {
@@ -50,6 +49,5 @@
 		font-size: 14px;
 		line-height: 35px;
 		font-weight: 600;
-      margin-bottom: 25px;
 	}
 }
