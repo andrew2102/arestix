@@ -1,0 +1,14 @@
+.footer {
+   min-height: 70px;
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: 300;
+	color: #999999;
+   background-color: $white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   a {
+      color: $darkgrey;
+   }
+}

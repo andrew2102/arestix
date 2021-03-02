@@ -1,0 +1,101 @@
+.devices {
+	background-color: $white;
+	// .devices__content
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 105px;
+	}
+	// .devices__phones
+	&__phones {
+		width: 48%;
+		position: relative;
+		// devices__phones-last
+		&-last {
+			order: 2;
+		}
+	}
+	// .devices__pic
+	&__pic {
+		margin: 65px 0px 40px 20px;
+		// devices__pic-last
+		&-last {
+			margin: 50px 0px 0px 0px;
+			position: absolute;
+			top: 0;
+			right: -10%;
+			z-index: 1;
+		}
+	}
+	// .devices__pic-white
+	&__pic-white {
+		position: absolute;
+		top: 0;
+		left: 37%;
+		z-index: 1;
+	}
+	// .devices__pic-shadow
+	&__pic-shadow {
+		position: absolute;
+		bottom: 0;
+		right: 2%;
+		z-index: 0;
+	}
+	// .devices__features
+	&__features {
+		width: 48%;
+		margin-top: 65px;
+		// devices__features-last
+		&-last {
+			order: 1;
+			margin-top: 125px;
+			margin-bottom: 200px;
+		}
+	}
+	// .devices__title
+	&__title {
+		font-family: 'Montserrat';
+		font-size: 36px;
+		line-height: 1.2;
+		margin-bottom: 20px;
+		b {
+			color: $blue;
+		}
+	}
+	// .devices__text
+	&__text {
+		line-height: 24px;
+		color: #555555;
+	}
+	// .devices__item
+	&__item {
+		display: flex;
+		margin-top: 35px;
+	}
+	// .devices__icon
+	&__icon {
+		display: inline-block;
+		width: 55px;
+		height: 55px;
+		border: 2px solid $blue;
+		border-radius: 50%;
+		position: relative;
+		margin-right: 30px;
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	// .devices__subtitle
+	&__subtitle {
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $darkgrey;
+	}
+}
