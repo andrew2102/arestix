@@ -1,0 +1,63 @@
+.form {
+	width: 52.1%; //750px
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 40px auto 90px;
+	// .form--subscribe
+	&--subscribe {
+		max-width: 560px;
+		margin-bottom: 40px;
+	}
+	// .form__field
+	&__field {
+		width: 48%; //360px
+		padding: 15px;
+		border: 1px solid #dddddd;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		// .form__field--subject
+		&--subject {
+			width: 100%;
+		}
+		// .form__field--texarea
+		&--textarea {
+			width: 100%;
+			min-height: 120px;
+			margin-bottom: 40px;
+			resize: vertical;
+		}
+		// .form__field--subscribe
+		&--subscribe {
+			min-width: 75.9%; //425px
+			border-radius: 23px 0px 0px 23px;
+			margin: 0;
+		}
+		&::placeholder {
+			font-size: 16px;
+			color: $gray;
+		}
+	}
+	// .form__button
+	&__button {
+		min-width: 47%; //320px
+		height: 50px;
+		padding: 10px;
+		margin: 0 auto;
+		background-color: #5816cf;
+		background-image: linear-gradient(0deg, #006ede 0%, #0681ff 100%);
+		border-radius: 25px;
+
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 300;
+		color: $white;
+		// .form__button--subscribe
+		&--subscribe {
+			min-width: 24.1%; //135px
+			margin: 0;
+			border-radius: 0px 23px 23px 0px;
+			text-transform: uppercase;
+		}
+	}
+}

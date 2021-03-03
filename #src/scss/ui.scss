@@ -30,9 +30,13 @@
 	font-weight: 700;
 	text-align: center;
 	color: $white;
+	margin-bottom: 10px;
 	&--screenshots {
-		color: $darkgrey;
+		color: $darkgray;
 		margin-bottom: 50px;
+	}
+	&--team {
+		color: $darkgray;
 	}
 }
 // .section__text

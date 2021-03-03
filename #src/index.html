@@ -262,6 +262,60 @@
 						</div>
 					</div>
 				</div>
+				<div class="message">
+					<div class="section__title section__title--team">Get In Touch</div>
+					<div class="section__text section__text--dark">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</div>
+					<form class="form" action="/signup" method="post">
+						<input class="form__field" type="text" placeholder="Your Name" />
+						<input class="form__field" type="email" placeholder="Email" />
+						<input
+							class="form__field form__field--subject"
+							type="text"
+							placeholder="Subject"
+						/>
+						<textarea
+							class="form__field form__field--textarea"
+							name="message"
+							placeholder="Message Content"
+						></textarea>
+						<button class="form__button" type="submit">Send Message</button>
+					</form>
+				</div>
+				<div class="subscribe">
+					<div class="subscribe__mask">
+						<div class="section__title">Subscribe to our newsletter</div>
+						<div class="section__text">Lorem ipsum dolor sit amet, consectetur</div>
+						<form class="form form--subscribe" action="/signup" method="post">
+							<input
+								class="form__field form__field--subscribe"
+								type="email"
+								placeholder="Enter Your Email"
+							/>
+							<button class="form__button form__button--subscribe" type="submit">
+								Notify Me
+							</button>
+						</form>
+						<ul class="subscribe__social">
+							<li class="subscribe__social-item">
+								<a href="#" target="_blank">
+									<img src="img/subscrine__icon_1.png" alt="Facebook" />
+								</a>
+							</li>
+							<li class="subscribe__social-item">
+								<a href="#" target="_blank">
+									<img src="img/subscrine__icon_2.png" alt="Twitter" />
+								</a>
+							</li>
+							<li class="subscribe__social-item">
+								<a href="#" target="_blank">
+									<img src="img/subscrine__icon_3.png" alt="Instagram" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</main>
 			@@include('_footer.html',{})
 		</div>
