@@ -25,12 +25,18 @@
 .section__title {
 	padding-top: 80px;
 	font-family: 'Montserrat';
-	font-size: 36px;
-	line-height: 35px;
+	// font-size: 36px;
+	@include adaptiv-font(36, 28);
+	line-height: calc(37 / 21);
 	font-weight: 700;
 	text-align: center;
 	color: $white;
 	margin-bottom: 10px;
+	&--customer {
+		padding-top: 0;
+		margin-top: 80px;
+		margin-bottom: 35px;
+	}
 	&--screenshots {
 		color: $darkgray;
 		margin-bottom: 50px;
@@ -38,11 +44,18 @@
 	&--team {
 		color: $darkgray;
 	}
+	@include breakpoint($md1) {
+		padding-top: 65px;
+	}
+	@include breakpoint($md4) {
+		padding-top: 50px;
+	}
 }
 // .section__text
 .section__text {
 	font-size: 20px;
-	line-height: 35px;
+	// line-height: 35px;
+	line-height: calc(37 / 21);
 	font-weight: 300;
 	color: $white;
 	text-align: center;

@@ -5,51 +5,130 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding-top: 105px;
+		@include breakpoint($md2) {
+			padding-top: 40px;
+		}
 	}
 	// .devices__phones
 	&__phones {
-		width: 48%;
+		// width: 48%;
+		max-width: 450px;
 		position: relative;
+		@include breakpoint($md2) {
+			margin: 0 50% 0 auto;
+		}
 		// devices__phones-last
 		&-last {
+			width: 100%;
+			height: 100%;
 			order: 2;
+			@include breakpoint($md2) {
+				margin: -90px auto 0 10%;
+			}
+			@include breakpoint($md4) {
+				margin-top: -120px;
+			}
 		}
 	}
 	// .devices__pic
 	&__pic {
 		margin: 65px 0px 40px 20px;
+		@include breakpoint($md3) {
+			max-width: 190px;
+		}
+		@include breakpoint($md4) {
+			max-width: 150px;
+			display: flex;
+			margin: 50px 50% 40px 10%;
+		}
 		// devices__pic-last
 		&-last {
 			margin: 50px 0px 0px 0px;
 			position: absolute;
 			top: 0;
-			right: -10%;
+			right: -20px;
 			z-index: 1;
+			@include breakpoint($mw + px) {
+				max-width: 630px;
+				top: 60px;
+			}
+			@include breakpoint($md2) {
+				position: relative;
+				max-width: 600px;
+				margin-top: 0;
+				right: 0;
+				top: 100px;
+				// margin: 50px auto 0;
+			}
+			@include breakpoint($md3) {
+				max-width: 500px;
+				right: 40px;
+				top: 85px;
+			}
+			@include breakpoint($md4) {
+				max-width: 320px;
+				right: 60px;
+			}
 		}
 	}
 	// .devices__pic-white
 	&__pic-white {
 		position: absolute;
 		top: 0;
-		left: 37%;
+		// left: 37%;
+		left: 80%;
 		z-index: 1;
+		@include breakpoint($md3) {
+			max-width: 218px;
+			top: 15px;
+		}
+		@include breakpoint($md4) {
+			max-width: 172px;
+			top: 10px;
+		}
 	}
 	// .devices__pic-shadow
 	&__pic-shadow {
 		position: absolute;
 		bottom: 0;
-		right: 2%;
+		// right: 2%;
+		left: -5%;
 		z-index: 0;
+		@include breakpoint($md3) {
+			max-width: 446px;
+			bottom: 7px;
+			left: -3%;
+		}
+		@include breakpoint($md4) {
+			max-width: 352px;
+			bottom: 13px;
+			left: -8%;
+		}
 	}
 	// .devices__features
 	&__features {
 		width: 48%;
 		margin-top: 65px;
+		@include breakpoint($md2) {
+			width: 95%;
+			margin: 35px auto 0;
+		}
+		@include breakpoint($md4) {
+			text-align: center;
+		}
 		// devices__features-last
 		&-last {
 			order: 1;
 			margin-top: 125px;
 			margin-bottom: 200px;
+			@include breakpoint($md2) {
+				margin-top: 65px;
+				margin-bottom: 100px;
+			}
+			@include breakpoint($md3) {
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
 		}
 	}
 	// .devices__title
@@ -57,30 +136,46 @@
 		font-family: 'Montserrat';
 		font-size: 36px;
 		line-height: 1.2;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
+		@include breakpoint($md2) {
+			text-align: center;
+			font-size: 32px;
+		}
 		b {
 			color: $blue;
 		}
 	}
 	// .devices__text
 	&__text {
-		line-height: 24px;
+		// line-height: 24px;
+		line-height: calc(37 / 24);
 		color: $graphite;
+		@include breakpoint($md4) {
+			font-size: 15px;
+		}
 	}
 	// .devices__item
 	&__item {
 		display: flex;
 		margin-top: 35px;
+		@include breakpoint($md4) {
+			flex-direction: column;
+			align-items: center;
+			margin-top: 25px;
+		}
 	}
 	// .devices__icon
 	&__icon {
 		display: inline-block;
-		width: 55px;
+		min-width: 55px;
 		height: 55px;
 		border: 2px solid $blue;
 		border-radius: 50%;
 		position: relative;
 		margin-right: 30px;
+		@include breakpoint($md3) {
+			margin-right: 15px;
+		}
 		img {
 			position: absolute;
 			top: 50%;
@@ -96,5 +191,10 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $darkgray;
+		@include breakpoint($md4) {
+			line-height: 25px;
+			font-size: 18px;
+			margin-top: 15px;
+		}
 	}
 }

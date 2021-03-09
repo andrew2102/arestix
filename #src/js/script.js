@@ -3,19 +3,39 @@
 
 // Slider
 $('.customer__slider').slick({
-   arrows: false,
-   dots: true,
-   slidesToShow: 1,
-   easing: 'ease',
+	arrows: false,
+	dots: true,
+	slidesToShow: 1,
+	easing: 'ease',
 });
 
 $('.screenshots__slider').slick({
-   arrows: false,
-   dots: true,
-   slidesToShow: 4,
-   slidesToScroll: 2,
-   easing: 'ease',
-   touchThreshold: 10,
+	arrows: false,
+	dots: true,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	easing: 'ease',
+	touchThreshold: 10,
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+			},
+		},
+		{
+			breakpoint: 850,
+			settings: {
+				slidesToShow: 2,
+			},
+		},
+		{
+			breakpoint: 580,
+			settings: {
+				slidesToShow: 1,
+			},
+		},
+	],
 });
 
 console.log('Hello!');

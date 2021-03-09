@@ -1,9 +1,13 @@
 .form {
-	width: 52.1%; //750px
+	max-width: 750px;
+	// width: 52.1%; //750px
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 40px auto 90px;
+	@include breakpoint($md4) {
+		margin-bottom: 70px;
+	}
 	// .form--subscribe
 	&--subscribe {
 		max-width: 560px;
@@ -16,6 +20,9 @@
 		border: 1px solid #dddddd;
 		border-radius: 5px;
 		margin-bottom: 20px;
+		@include breakpoint($md3) {
+			width: 100%;
+		}
 		// .form__field--subject
 		&--subject {
 			width: 100%;
@@ -29,9 +36,12 @@
 		}
 		// .form__field--subscribe
 		&--subscribe {
-			min-width: 75.9%; //425px
+			width: 425px;
 			border-radius: 23px 0px 0px 23px;
-			margin: 0;
+			@include breakpoint($md3) {
+				width: 100%;
+				border-radius: 23px;
+			}
 		}
 		&::placeholder {
 			font-size: 16px;
@@ -40,8 +50,8 @@
 	}
 	// .form__button
 	&__button {
-		min-width: 47%; //320px
-		height: 50px;
+		width: 320px;
+		min-height: 50px;
 		padding: 10px;
 		margin: 0 auto;
 		background-color: #5816cf;
@@ -54,10 +64,20 @@
 		color: $white;
 		// .form__button--subscribe
 		&--subscribe {
-			min-width: 24.1%; //135px
-			margin: 0;
+			width: 135px;
+			margin-bottom: 20px;
 			border-radius: 0px 23px 23px 0px;
 			text-transform: uppercase;
+			@include breakpoint($md3) {
+				width: 100%;
+				border-radius: 23px;
+			}
 		}
+	}
+	&__button:hover,
+	&__button--subscribe:hover {
+		font-weight: 700;
+		color: $darkgray;
+		transition: all 0.3s ease;
 	}
 }

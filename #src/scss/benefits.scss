@@ -3,27 +3,35 @@
 	// .benefits__content
 	&__content {
 		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-bottom: 40px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 	// .benefits__item
 	&__item {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-right: 15px;
-		&:last-child {
-			margin-right: 0;
+		width: 24%;
+		margin-bottom: 20px;
+		// margin-right: 15px;
+		// &:last-child {
+		// 	margin-right: 0;
+		// }
+		@include breakpoint($md2) {
+			width: 49%;
+		}
+		@include breakpoint($md4) {
+			width: 100%;
+			margin-bottom: 30px;
 		}
 	}
 	// .benefits__icon
 	&__icon {
-		display: inline-block;
+		width: 70px;
+		// display: inline-block;
 		padding: 15px;
 		border: 2px solid $blue;
 		border-radius: 10px;
-		margin-bottom: 28px;
+		margin: 0 auto 28px;
 		img {
 			width: 36px;
 			height: 36px;
