@@ -1,4 +1,5 @@
 @@include('functions.js', {});
+@@include('jquery-3.6.0.slim.min.js', {});
 @@include('slick.min.js', {});
 
 // Slider
@@ -37,5 +38,3 @@ $('.screenshots__slider').slick({
 		},
 	],
 });
-
-console.log('Hello!');
